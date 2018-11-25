@@ -11,11 +11,11 @@ VMHunt is a set of tools for analyzing virtualized binary code. Now we only supp
 2. Compile VMHunt: run `make` in the project root directory.
 
 ## How to use
-1. Use the tracer to record an execution trace.
+1. Use the tracer to record an execution trace.  
    `pin -t tracer/obj-ia32/instracelog.so -- yourprogram`
-2. Extract virtualized snippet in the trace.
+2. Extract virtualized snippet in the trace.  
    `./vmextract tracefile`
-3. Backward slice the trace.
+3. Backward slice the trace.  
    `./slicer tracefile`
-4. Run MG symbolic execution
+4. Run MG symbolic execution  
    `./mgse tracefile`
